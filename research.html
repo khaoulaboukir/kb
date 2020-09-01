@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery.js"></script>
+    <script> 
+    $(function(){
+      $("#include_latest").load("latest_news.html"); 
+    });
+   </script>
+  <title>Khaoula Boukir - Home</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+ 
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <font size="3"><h1><a href="index.html">Khaoula <span class="logo_colour">Boukir</span></a></h1></font>
+          <font size="2"> <h2>Ph.D Student in Computer Science/Real-time systems, Nantes University </h2></font>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="courses.html">Courses</a></li>
+
+         
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar" >
+        <div id="include_latest"></div>
+       
+        
+
+        <h1>Useful Links</h1>
+
+        <ul>
+
+          <li> <font size="8"><a href="https://www.researchgate.net/profile/khaoula_boukir" target="_blank"><i class="fab fa-researchgate"></i></a> </font></li>
+          <li><font size="8"><a href="https://www.linkedin.com/in/khaoula-boukir-44101065/"><i class="fab fa-linkedin"></i></a></font></li>
+ 
+
+        </ul>
+ 
+      </div>
+      <div id="content">
+      
+      <h2>PhD project</h2>
+      <font size="3">
+        <ul>
+          Implementing a new scheduling policy within a real-time operating system is a real challenge. Moving from an abstract literary specification of a policy to an implementation within a real platform requires the consideration of several constraints. Consequently, a scheduler implementation work shall imperatively be supported by a verification effort to give it a level of confidence to validate the compliance of the implemented scheduler behavior with its literary specification. 
+
+In our thesis project, we investigate the use of formal methods for the verification of real-time scheduler implementations. We propose a model-checking based approach, which we conduct on global scheduler implementations carried out on an OSEK/VDX-compliant real-time operating system. Accordingly, for each implementation, a model describing its behavior is elaborated with finite state and timed machines. This model is stimulated by generators producing indeterministic scenarios of scheduling events in order to observe the reaction of the implementation under various situations. Based on these situations, the verification is then conducted by examining the satisfaction of a set of specified requirements according to the expected behavior of the implementation as stipulated in the literature. 
+
+This approach allowed the verification of the functional correction of the behavior of two implementations of global schedulers in a real-time operating system: G-EDF and EDF-US. It may also be used to verify other implementations on other systems.
+        </ul> 
+      </font>
+      
+
+      <h2> Research Interests</h2>
+      <font size="3">
+        <ul>
+          <li> Real-time scheduling.</li>
+          <li> Real-time operating systems.</li>
+          <li> Implementation of real-time scheduling policies.</li>
+          <li> Applying formal methods for the verification of real-time operating systems.</li>
+          <li> Model-checking.</li>
+          <li> Finite state and timed automata.</li>
+        </ul> 
+    </font>
+
+
+
+ 
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="research.html">Research</a> | <a href="publications.html">Publications</a> | <a href="courses.html">Courses</a> </p>
+      <p>Copyright &copy; K. Boukir 2019 | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>
