@@ -1,0 +1,70 @@
+
+
+\documentclass[
+11pt, 
+french, % ngerman for German
+singlespacing, 
+nohyperref, 
+headsepline,
+]{MastersDoctoralThesis} 
+
+
+%\usepackage{accanthis}
+\include{preambule}
+\hypersetup{
+     colorlinks=true,
+     linkcolor=blue,
+     urlcolor=blue,
+     citecolor=gray
+}
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Dossier de candidature au prix de thèse GDR GPL 2020} % Your thesis title
+
+\supervisor{} 
+\examiner{} 
+\degree{} 
+\author{} 
+\addresses{} 
+\subject{} % 
+\keywords{} 
+\university{\href{http://www.ec-nantes.fr/}{Université de Nantes}} 
+\department{\href{http://department.university.com}{Department or School Name}} 
+\group{\href{http://researchgroup.university.com}{Research Group Name}} 
+\faculty{\href{http://faculty.university.com}{Faculty Name}} 
+\hypersetup{pdftitle=\ttitle} 
+\hypersetup{pdfauthor=\authorname}
+\hypersetup{pdfkeywords=\keywordnames} 
+
+
+
+\begin{document}
+	
+	%\pgfversion
+\sloppy
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+\include{chapitres/chapitre1}
+
+\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  

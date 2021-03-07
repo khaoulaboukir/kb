@@ -1,0 +1,387 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{nelissen2012u}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=NG}{%
+         family={Nelissen},
+         familyi={N\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={Berten},
+         familyi={B\bibinitperiod},
+         given={Vandy},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=NV}{%
+         family={N{\'e}lis},
+         familyi={N\bibinitperiod},
+         given={Vincent},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Goossens},
+         familyi={G\bibinitperiod},
+         given={Jo{\"e}l},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Milojevic},
+         familyi={M\bibinitperiod},
+         given={Dragomir},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{NG+1}
+    \strng{fullhash}{NGBVNVGJMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nel+12}
+    \field{booktitle}{Real-Time Systems (ECRTS), 2012 24th Euromicro Conference
+  on}
+    \field{pages}{13\bibrangedash 23}
+    \field{title}{U-EDF: An unfair but optimal multiprocessor scheduling
+  algorithm for sporadic tasks}
+    \field{year}{2012}
+  \endentry
+
+  \entry{bechennec2006trampoline}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=BJL}{%
+         family={Bechennec},
+         familyi={B\bibinitperiod},
+         given={Jean-Luc},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Briday},
+         familyi={B\bibinitperiod},
+         given={Mikael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Faucou},
+         familyi={F\bibinitperiod},
+         given={S{\'e}bastien},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Trinquet},
+         familyi={T\bibinitperiod},
+         given={Yvon},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{BJL+1}
+    \strng{fullhash}{BJLBMFSTY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bec+06}
+    \field{booktitle}{Emerging Technologies and Factory Automation, 2006.
+  ETFA'06. IEEE Conference on}
+    \field{pages}{62\bibrangedash 69}
+    \field{title}{Trampoline an open source implementation of the osek/vdx rtos
+  specification}
+    \field{year}{2006}
+  \endentry
+
+  \entry{boukir2020requirement}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BK}{%
+         family={Boukir},
+         familyi={B\bibinitperiod},
+         given={Khaoula},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BJL}{%
+         family={B{\'e}chennec},
+         familyi={B\bibinitperiod},
+         given={Jean-Luc},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=DAM}{%
+         family={D{\'e}planche},
+         familyi={D\bibinitperiod},
+         given={Anne-Marie},
+         giveni={A\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BKBJLDAM1}
+    \strng{fullhash}{BKBJLDAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BBD20}
+    \field{booktitle}{Proceedings of the 28th International Conference on
+  Real-Time Networks and Systems}
+    \field{pages}{89\bibrangedash 99}
+    \field{title}{Requirement specification and model-checking of a real-time
+  scheduler implementation}
+    \field{year}{2020}
+  \endentry
+
+  \entry{boukir2018formal}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BK}{%
+         family={Boukir},
+         familyi={B\bibinitperiod},
+         given={Khaoula},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BJL}{%
+         family={B{\'e}chennec},
+         familyi={B\bibinitperiod},
+         given={Jean-Luc},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=DAM}{%
+         family={D{\'e}planche},
+         familyi={D\bibinitperiod},
+         given={Anne-Marie},
+         giveni={A\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{BKBJLDAM1}
+    \strng{fullhash}{BKBJLDAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BBD18}
+    \field{booktitle}{Proceedings of the 26th International Conference on
+  Real-Time Networks and Systems}
+    \field{pages}{83\bibrangedash 92}
+    \field{title}{Formal approach for a verified implementation of Global EDF
+  in Trampoline}
+    \field{year}{2018}
+  \endentry
+
+  \entry{boukir2017reducing}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BK}{%
+         family={Boukir},
+         familyi={B\bibinitperiod},
+         given={Khaoula},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BJL}{%
+         family={B{\'e}chennec},
+         familyi={B\bibinitperiod},
+         given={Jean-Luc},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=DAM}{%
+         family={D{\'e}planche},
+         familyi={D\bibinitperiod},
+         given={Anne-Marie},
+         giveni={A\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BKBJLDAM1}
+    \strng{fullhash}{BKBJLDAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BBD17}
+    \field{pages}{9}
+    \field{title}{Reducing the gap between theory and practice: towards A
+  Proven Implementation of Global EDF in Trampoline}
+    \field{journaltitle}{JRWRTC 2017}
+    \field{year}{2017}
+  \endentry
+
+  \entry{boukir2019}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BK}{%
+         family={Boukir},
+         familyi={B\bibinitperiod},
+         given={Khaoula},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BJL}{%
+         family={B{\'e}chennec},
+         familyi={B\bibinitperiod},
+         given={Jean-Luc},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=DAM}{%
+         family={D{\'e}planche},
+         familyi={D\bibinitperiod},
+         given={Anne-Marie},
+         giveni={A\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{BKBJLDAM1}
+    \strng{fullhash}{BKBJLDAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BBD19}
+    \field{booktitle}{Proceedings of the 27th International Conference on
+  Real-Time Networks and Systems}
+    \field{title}{Vérification d’une implémentation d’ordonnanceur temps
+  réel par model-checking}
+    \field{year}{2019}
+  \endentry
+
+  \entry{FLOMAN}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=MF}{%
+         family={Many},
+         familyi={M\bibinitperiod},
+         given={Florian},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MF1}
+    \strng{fullhash}{MF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Man13}
+    \field{title}{Combinaison des aspects temps réel et sûreté de
+  fonctionnement pour la conception des plateformes avioniques}
+    \list{institution}{1}{%
+      {Université de Toulouse}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2013}
+  \endentry
+
+  \entry{tigori2015approche}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=TKTG}{%
+         family={Tigori},
+         familyi={T\bibinitperiod},
+         given={Kabland Toussaint\bibnamedelima Gautier},
+         giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+      }}%
+      {{hash=BJL}{%
+         family={B{\'e}chennec},
+         familyi={B\bibinitperiod},
+         given={Jean-Luc},
+         giveni={J\bibinithyphendelim L\bibinitperiod},
+      }}%
+      {{hash=ROH}{%
+         family={Roux},
+         familyi={R\bibinitperiod},
+         given={Olivier\bibnamedelima Henri},
+         giveni={O\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TKTGBJLROH1}
+    \strng{fullhash}{TKTGBJLROH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{TBR15}
+    \field{booktitle}{Mod{\'e}lisation des Syst{\`e}mes R{\'e}actifs (MSR
+  2015)}
+    \field{title}{Approche formelle pour la sp{\'e}cialisation de syst{\`e}mes
+  d'exploitation temps r{\'e}el}
+    \field{year}{2015}
+  \endentry
+
+  \entry{bengtsson1996uppaal}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BJ}{%
+         family={Bengtsson},
+         familyi={B\bibinitperiod},
+         given={Johan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Larsen},
+         familyi={L\bibinitperiod},
+         given={Kim},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Larsson},
+         familyi={L\bibinitperiod},
+         given={Fredrik},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Pettersson},
+         familyi={P\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={Wang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJLKLFPPYW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ben+96}
+    \field{pages}{232\bibrangedash 243}
+    \field{title}{UPPAAL—a tool suite for automatic verification of real-time
+  systems}
+    \field{journaltitle}{Hybrid Systems III}
+    \field{year}{1996}
+  \endentry
+
+  \entry{clarke1981design}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CEM}{%
+         family={Clarke},
+         familyi={C\bibinitperiod},
+         given={Edmund\bibnamedelima M},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=EEA}{%
+         family={Emerson},
+         familyi={E\bibinitperiod},
+         given={E\bibnamedelima Allen},
+         giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CEMEEA1}
+    \strng{fullhash}{CEMEEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{CE81}
+    \field{booktitle}{Workshop on Logic of Programs}
+    \field{pages}{52\bibrangedash 71}
+    \field{title}{Design and synthesis of synchronization skeletons using
+  branching time temporal logic}
+    \field{year}{1981}
+  \endentry
+\enddatalist
+\endinput

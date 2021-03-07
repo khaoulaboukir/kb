@@ -1,0 +1,203 @@
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc}
+%\usepackage[T1,T2A]{fontenc} 
+%\usepackage[utf-8]{inputenc}% Output font encoding for international characters
+\usepackage{palatino} % Use the Palatino font by default
+%\usepackage{fontspec}
+%\setsansfont{Calibri}
+% Set serifed font to Cambria
+%\setmainfont{Cambria}
+\usepackage{lmodern}
+%\usepackage{wasysym}
+\usepackage{soul}
+\usepackage{amsthm}
+\usepackage[fleqn]{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[justification=justified, margin=10pt]{caption}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{listings}
+\usepackage{changebar}
+
+\newcommand{\code}[1]{{\small\tt #1}}
+%\usepackage{tikz}
+
+\lstset{
+	basicstyle=\ttfamily\tiny
+}
+
+%-----------------------------------------------------------------------------
+% ****************This so the table will work **********************************
+\DeclareUnicodeCharacter{00A0}{~}
+% %****************************************************************************
+%-------------------------------------------------------------------------------
+
+
+\frenchbsetup{StandardLists=true}
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+%%%%% Style of hyperref  %%%%%%
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks=true,
+     linkcolor=blue,
+     urlcolor=blue,
+     citecolor=gray
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% Style of caption %%%%%%%%%%%
+%\usepackage{subcaption}
+\captionsetup{compatibility=false}
+%eps to pdf
+\usepackage{epstopdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% Style of bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[backend=bibtex,style=alphabetic, sorting=none]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\bibliography{biblio}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=2.5cm, % Outer margin
+	bindingoffset=0cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe,% show how the type block is set on the page
+}
+
+%%%%%%% Font Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{myfont}
+\definecolor{gray75}{gray}{0.75}
+\definecolor{myblue}{RGB}{34,58,109}
+\definecolor{2ndblue}{RGB}{44, 109, 189}
+\newcommand{\hsp}{\hspace{20pt}}
+%\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+
+%\titleformat{\chapter}[shape]{format}{label}{sep}{before-code}{after-code}
+
+
+
+\titleformat{\chapter}[block]
+{\Huge}{\bfseries\textcolor{myblue}{\thechapter}\textcolor{myblue}{\textbf{|}}\hsp}{0pt}{\centering\Huge\scshape}
+[\vspace{-1ex}%
+\rule{\textwidth}{2.5pt}] 
+		
+	%{	\rule{\textwidth}{2pt}
+%		\vspace{0ex}
+%		\centering} % before-code
+%	[\vspace{-0.5ex}%
+%	\rule{\textwidth}{2.5pt}] % after-code
+
+
+%\titleformat
+%{\chapter} % command
+%[block] % shape
+%{\Huge\bfseries} % format
+%{\textcolor{myblue} {\thechapter \hsp\textcolor{myblue}{\textbf{|}}\hsp}} {0.5ex} {	\rule{\textwidth}{2pt}
+%	\vspace{0ex}
+%	\centering} % before-code
+%[\vspace{-0.5ex}%
+%\rule{\textwidth}{2.5pt}] % after-code
+
+
+
+\titleformat{\section}[block]
+{\normalfont\Large\bfseries \color{black}}
+{\thesection}
+{1em}{}
+
+
+
+
+\titleformat{\subsection}[block]
+{\normalfont\large\bfseries\color{black}}
+{\thesubsection}
+{1em}{}
+%\end{myfont}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%% Definitions, lemmas, corollaries and theorems
+\newcounter{dummy} \numberwithin{dummy}{chapter}
+
+\usepackage[framemethod=tikz]{mdframed}
+\newmdtheoremenv[
+hidealllines=true,
+leftline=true,
+innertopmargin=0pt,
+innerbottommargin=0pt,
+linewidth=4pt,
+linecolor=gray!40,
+innerrightmargin=0pt,
+]{dfn}[dummy]{Definition}
+\let\olddefinition\dfn
+\renewcommand{\dfn}{\olddefinition\normalfont}
+
+
+\newmdtheoremenv[
+hidealllines=true,
+leftline=true,
+innertopmargin=0pt,
+innerbottommargin=0pt,
+linewidth=4pt,
+linecolor=gray!40,
+innerrightmargin=0pt,
+]{lem}[dummy]{Lemma}
+%\renewcommand{lem}[dummy]{lemm}
+\let\oldlemma\lem
+\renewcommand{\lem}{\oldlemma\normalfont}
+
+\newmdtheoremenv[
+hidealllines=true,
+leftline=true,
+innertopmargin=0pt,
+innerbottommargin=0pt,
+linewidth=4pt,
+linecolor=gray!40,
+innerrightmargin=0pt,
+]{thm}{Theorem}
+\let\oldtheorem\thm
+\renewcommand{\thm}{\oldtheorem\normalfont}
+\numberwithin{thm}{chapter}
+
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[chapter]
+
+\newtheorem*{remark}{Remark}
+
+
+% Numbering in roman style
+\renewcommand\thechapter{\arabic{chapter}}
+\renewcommand\thesection{\thechapter.\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\theequation{{\color{blue}\thechapter.\arabic{equation}}}
+
+
+\renewcommand{\arraystretch}{1.5}
+
+\newcommand{\KB}[1]{\hl{#1}}
+
+%\usepackage[Lenny]{fncychap}
+
+
