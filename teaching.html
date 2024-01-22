@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Khaoula Boukir</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <nav class="tech-nav">
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
+            <li><a href="teaching.html" class="active"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+            <li><a href="publications.html"><i class="fas fa-book"></i> Publications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <div class="grid">
+            <section id="teaching">
+
+                <div class="content-block">
+                    <h4 class="toggle" style="text-align: center;">Responsibilities</h4>
+                    <div class="lecture-content">
+                    <!-- Content to show/hide -->
+                        <li>Co-management of the master's program "Artificial Intelligence and Virutal Reality" - Faculty of Science at <a href="https://www.uit.ac.ma/" target="_blank">Ibn Tofail University</a></li>
+                        <li>Co-project coordinator of <a href="https://cnde.ma/" target="_blank">the national digitalization and distance learning project</a> :
+                        <ul class="subitems">
+                            <li> <B>Theme:</B> The basics of computer science</li>
+                            <li> <B>Target audience:</B> 1st year students in a computer science program</li>
+                        </ul>
+
+                    </li>
+                            
+                           
+                    </div>
+                </div>
+
+
+                <div class="content-block">
+                    <h4 class="toggle">Lectures I give at <a href="https://www.uit.ac.ma/" target="_blank">Ibn Tofail University</a> (2021-today)</h4>
+                    <div class="lecture-content">
+                    <!-- Content to show/hide -->
+                        <li>Advanced python programming for AI</li>
+                        <li>Algorithmics</li>
+                        <li>Real-time systems programming</li>
+                        <li>The basics of computer science</li>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h4 class="toggle">Lectures I gave at <a href="https://polytech.univ-nantes.fr" target="_blank">Polytech'Nantes</a> (2019-2020)  </h4>
+                    <div class="lecture-content">
+                    <!-- Content to show/hide -->
+                    <li>Operating systems.</li>
+                    <li>Process concurrency and synchronization.</li>
+                    <li>Systems software architecture.</li>
+                    <li>Advanced object oriented programming: C++ language.</li>
+                    <li>Algorithms and programming: application with the python language.</li>
+                    <li>Programming with the C language.</li>
+                    <li>Classical logic (application in Frama-C).</li>
+                    <li>Introduction to numerical analysis.</li>
+                    <li>Tools for software development.</li>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h4 class="toggle">Lectures I gave at <a href="https://iutnantes.univ-nantes.fr/" target="_blank">IUT Nantes</a> (2017-2019) </h4>
+                    <div class="lecture-content">
+                    <!-- Content to show/hide -->
+                    <li>Real-time systems.</li>
+                    <li>Electronic systems.</li>
+                    <li>Algorithms and programming: application with the C language.</li>
+                    <li>Tools for software development.</li>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h4 class="toggle">Lectures I gave at <a href="https://www.ec-nantes.fr/" target="_blank">Centrale Nantes</a> (2016-2017) </h4>
+                    <div class="lecture-content">
+                    <!-- Content to show/hide -->
+                    <li>Algorithms and programming: application with the C++ language.</li>
+                    <li>Information systems.</li>
+                    </div>
+                </div>
+
+               
+               
+            </section>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript for toggling visibility -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const arrow = this.querySelector('.arrow');
+            content.classList.toggle('hidden');
+            arrow.style.transform = content.classList.contains('hidden') ? 'rotate(180deg)' : 'rotate(0deg)';
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const mainItems = document.querySelectorAll('li');
+
+    mainItems.forEach((mainItem) => {
+        mainItem.addEventListener('click', (event) => {
+            // Prevent the event from propagating up to other list item clicks
+            event.stopPropagation();
+
+            // Find the subitems list within the clicked list item
+            const subItemsList = mainItem.querySelector('.subitems');
+            if(subItemsList) {
+                // Toggle the display of the subitems list
+                subItemsList.style.display = subItemsList.style.display === 'none' ? 'block' : 'none';
+            }
+        });
+    });
+});
+
+    </script>
+
+
+
+
+
+
+
+
+
+<div id="footer">
+    <p><a href="home.html">Home</a> | <a href="research.html">Research</a> | <a href="teaching.html">Lectures</a>  | <a href="publications.html">Publications</a>  </p>
+    <p>Copyright &copy; K. Boukir 2023 </p>
+</div>
+
+
+
+
+
+ </body>
+</html>

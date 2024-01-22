@@ -1,0 +1,153 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+section {
+  grid-column: span 12;
+}
+
+figure {
+  grid-column: span 3;
+}
+
+.px {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+h2 {
+  margin-bottom: 10px; /* Adjust this value as needed */
+  margin-top: 15px;
+}
+
+h4 {
+  margin-bottom: 10px; /* Adjust this value as needed */
+  margin-top: 15px;
+}
+
+
+
+
+/* Reset list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tech-themed navigation bar */
+.tech-nav {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px;
+  max-width: 600px; /* Adjust based on your layout */
+  margin: 20px auto;
+}
+
+.tech-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tech-nav a {
+  text-decoration: none;
+  color: #a2a2a2;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  padding: 8px 10px;
+  transition: background-color 0.3s, color 0.3s; /
+}
+
+/*.tech-nav a.active, .tech-nav a:hover {
+  color: #505050;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active link style */
+.tech-nav a.active {
+  background-color: #fadbad; /* Peach color for active state */
+  color: #505050; /* Darker text color for better readability */
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+
+/* Hover style */
+.tech-nav a:hover, .tech-nav a:focus {
+  background-color: #fadbad; /* Peach color for hover */
+  color: #505050; /* Darker text color for better readability */
+}
+
+.tech-nav i {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Include Font Awesome */
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+
+.lecture-content {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle {
+    cursor: pointer;
+    color: black; /* Styling for the toggle - can be adjusted */
+}
+
+
+/*This is for the blocks*/
+.content-block {
+  background-color: #ffffff; /* or any color you prefer */
+  border: 1px solid #ddd; /* light grey border */
+  border-radius: 4px; /* rounded corners */
+  padding: 20px; /* space inside the cards */
+  margin-bottom: 20px; /* space between the cards */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+  font-size: 0.9rem;  /* for text size*/
+}
+.content-block p {
+  /* For paragraphs and list items within the block */
+  font-size: 0.9rem; /* Adjust as needed */
+}
+.content-block h4 {
+  /* If you want to specifically adjust the size for headers within the block */
+  font-size: 1.1rem; /* Adjust as needed */
+}
+
+h4 {
+  margin-top: 0; /* remove top margin to reduce space to the border */
+}
+
+
+/* for the text to be justified */
+.content-block p,
+.content-block ul,
+.content-block li {
+    text-align: justify;
+}
+
+.subitems {
+  font-size: 0.9rem;
+  padding-left: 40px; 
+}
+
+
+.small-button {
+  font-size: 12px;
+  padding: 5px 10px;
+  display: inline-block; /* This will make the button only as wide as its content */
+}
+

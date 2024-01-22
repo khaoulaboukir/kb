@@ -1,136 +1,105 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <script src="https://code.jquery.com/jquery.js"></script>
-    <script> 
-    $(function(){
-      $("#include_latest").load("latest_news.html"); 
-    });
-   </script>
-  <title>Khaoula Boukir - Home</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <link rel="stylesheet" type="text/css" href="style/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
- 
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Khaoula Boukir</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-
+<link rel="stylesheet" href="style.css">
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <font size="3"><h1><a href="index.html">Khaoula <span class="logo_colour">Boukir</span></a></h1></font>
-          <font size="2"> <h2>Ph.D Student in Computer Science/Real-time systems, Nantes University </h2></font>
-        </div>
-      </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li><a href="index.html">About</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="courses.html">Courses</a></li>
-
-         
+    <nav class="tech-nav">
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="research.html" class="active"><i class="fas fa-flask"></i> Research</a></li>
+            <li><a href="teaching.html"><i class="fas fa-chalkboard-teacher"></i> Teaching</a></li>
+            <li><a href="publications.html"><i class="fas fa-book"></i> Publications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
-      </div>
-    </div>
-    <div id="site_content">
-      <div class="sidebar" >
-        <div id="include_latest"></div>
-       
+    </nav>
+    <main class="container">
+        <div class="grid">
+          <section id="research">
+
+
+            <div class="content-block">
+                <h4 style="text-align: center;">Current Research Interests</h4>
+                <li>Verification of security policies within ROS2-based applications</li>
+                <li>Verification of functional behavior of ROS-based applications</li>
+                <li>Verification of Access Control policies over low-level OS code</li>
+                <li>Applying formal methods for the verification of real-time operating systems</li>
+                <li>Schedulability Analysis</li>
+            </div>
+
+            <div class="content-block">
+                <h4 style="text-align: center;">Scientific activities</h4>
+
+                <B>PhD students:</B>
+                <li>Iliass Mellal, FS - UM5, "Security verification within V2X communication system"</li>
+
+                <B>Interns:</B>
+                <li>Amine Nasri, ENSIAS - UM5, "Access control analyses using Frama-C"</li>
+                <li>Mohammed Amine Layachi, FS - UIT, "Aided formal verification using neural networks"</li>
+            
+                <B>Master projects:</B>
+                <li>EDRISI: an AI-based real-time traffic management system</li>
+                <li>Implementing the confidentiality between nods communications in ROS2</li>
+            </div>
+
+
+            <div class="content-block">
+                <h4 style="text-align: center;">Postdoc Project</h4>
+                <p>In the context of H2020 ENSURESEC european project, we to use Frama-C for detecting security threats 
+              in operating systems. The projects aims to enhance privacy and/or security by checking their properties 
+              at the code level. To do so, a dedicated language is proposed to express allow expressing of such properties 
+              over the code of the target OS.</p>
+
+            
+                 <h4 style="text-align: center;">PhD Project</h4>
+                <p>Implementing a new scheduling policy within a real-time operating system is a real challenge. Moving 
+                from an abstract literary specification of a policy to an implementation within a real platform requires 
+                the consideration of several constraints. Consequently, a scheduler implementation work shall imperatively 
+                be supported by a verification effort to give it a level of confidence to validate the compliance of 
+                the implemented scheduler behavior with its literary specification. In our thesis project, we investigate
+                 the use of formal methods for the verification of real-time scheduler implementations. We propose a 
+                 model-checking based approach, which we conduct on global scheduler implementations carried out on 
+                 an OSEK/VDX-compliant real-time operating system. Accordingly, for each implementation, a model 
+                 describing its behavior is elaborated with finite state and timed machines. This model is stimulated 
+                 by generators producing indeterministic scenarios of scheduling events in order to observe the 
+                 reaction of the implementation under various situations. Based on these situations, the verification 
+                 is then conducted by examining the satisfaction of a set of specified requirements according to the 
+                 expected behavior of the implementation as stipulated in the literature. This approach allowed the 
+                 verification of the functional correction of the behavior of two implementations of global schedulers
+                  in a real-time operating system: G-EDF and EDF-US. It may also be used to verify other implementations 
+                  on other systems.</p>
+            </div>
         
+            <div class="content-block">
+                <h4 style="text-align: center;">Projects</h4>
+            <p>H2020 - ENSURESEC (2020 - 2021): Extensive Code Security Analyses for Frama-C</p>
 
-        <h1>Useful Links</h1>
+            <h4 style="text-align: center;">Events</h4>
+                <li><a href="https://www.amirs.ma/icecocs2022/" target="_blank">ICECOCS 2022</a> - PC member</li>
+                </li><a href="https://rtns2018.ensma.fr/files/cfpjrwrtc2018.pdf" target="_blank">JRWRTC 2018</a> - PC member</li>
 
-        <ul>
-
-          <li> <font size="8"><a href="https://www.researchgate.net/profile/khaoula_boukir" target="_blank"><i class="fab fa-researchgate"></i></a> </font></li>
-          <li><font size="8"><a href="https://www.linkedin.com/in/khaoula-boukir-44101065/"><i class="fab fa-linkedin"></i></a></font></li>
- 
-
-        </ul>
- 
-      </div>
-      <div id="content">
-      
-      <h2>PhD project</h2>
-      <font size="3">
-        <ul>
-
-          <p align="justify">
-
-
-          Implementing a new scheduling policy within a real-time operating system is a real challenge. Moving from an abstract literary specification of a policy to an implementation within a real platform requires the consideration of several constraints. Consequently, a scheduler implementation work shall imperatively be supported by a verification effort to give it a level of confidence to validate the compliance of the implemented scheduler behavior with its literary specification. 
-
-In our thesis project, we investigate the use of formal methods for the verification of real-time scheduler implementations. We propose a model-checking based approach, which we conduct on global scheduler implementations carried out on an OSEK/VDX-compliant real-time operating system. Accordingly, for each implementation, a model describing its behavior is elaborated with finite state and timed machines. This model is stimulated by generators producing indeterministic scenarios of scheduling events in order to observe the reaction of the implementation under various situations. Based on these situations, the verification is then conducted by examining the satisfaction of a set of specified requirements according to the expected behavior of the implementation as stipulated in the literature. 
-
-This approach allowed the verification of the functional correction of the behavior of two implementations of global schedulers in a real-time operating system: G-EDF and EDF-US. It may also be used to verify other implementations on other systems.
-</p>        
-</ul> 
-      </font>
-      
-
-      <h2>Postdoc project</h2>
-      <font size="3">
-        <ul>
-
-          <p align="justify">
-
-            In the context of H2020 ENSURESEC european project, we to use Frama-C for detecting security threaths in operating systems. The projects aims to enhance privacy and/or security by checking their properties at the code level. To do so, a dedicated language is proposed to express allow expressing of such properties over the code of the targer OS.
-
-          
-          </p>        
-</ul> 
-      </font>
-
-
-      <h2> Research Interests</h2>
-      <font size="3">
-        <ul>
-          <li> Real-time scheduling.</li>
-          <li> Real-time operating systems.</li>
-          <li> Implementation of real-time scheduling policies.</li>
-          <li> Applying formal methods for the verification of real-time operating systems.</li>
-          <li> Model-checking.</li>
-          <li> Finite state and timed automata.</li>
-        </ul> 
-    </font>
-
-
-    <h2> Projects </h2>
-      <font size="3">
-        <ul>
-          <li> H2020 - ENSURESEC (2020 - 2021): Extensive Code Security Analyses for Frama-C </li>
-        </ul> 
-    </font>
-
-
-
-    <h2> Events</h2>
-      <font size="3">
-        <ul>
-          <li> <a href="https://www.amirs.ma/icecocs2022/" target="_blank">ICECOCS 2022</a>  - PC member </li>
-          <li> <a href="https://rtns2018.ensma.fr/files/cfpjrwrtc2018.pdf" target="_blank">JRWRTC 2018</a>  - PC member </li>
-        </ul> 
-    </font>
-
-
-
- 
-      </div>
-    </div>
+                
+            </div>
+            
+        </section> 
+        </div>
+    </main>
+ <!-- Other Sections    <footer class="container">
+        <small><a href="https://github.com/khaoulaboukir">GitHub</a> • <a href="#">LinkedIn</a></small>
+    </footer>  -->
     <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="research.html">Research</a> | <a href="publications.html">Publications</a> | <a href="courses.html">Courses</a> </p>
-      <p>Copyright &copy; K. Boukir 2019 | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a></p>
+        <p><a href="home.html">Home</a> | <a href="research.html">Research</a> | <a href="teaching.html">Lectures</a>  | <a href="publications.html">Publications</a>  </p>
+        <p>Copyright &copy; K. Boukir 2023 </p>
     </div>
-  </div>
+    
+
+
 </body>
 </html>
