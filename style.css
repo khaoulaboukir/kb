@@ -35,6 +35,25 @@ body {
   color: #f5f5f5; /* Light text for readability */
 }
 
+/* Cursor effect */
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff; /* Cursor border color */
+  border-radius: 50%;
+  pointer-events: none; /* Prevent blocking clicks */
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+}
+
+.cursor-active {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2); /* Inner glow */
+}
+
 
 /* Reset list styles */
 ul {
