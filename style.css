@@ -14,6 +14,7 @@ figure {
 .px {
     text-align: justify;
     text-justify: inter-word;
+    /*color: #545154; /* text */
 }
 
 
@@ -29,12 +30,18 @@ h4 {
 
 
 
+body {
+  background: linear-gradient(to bottom, #2e2e2e, #1a1a1a); /* Dark graduated gray */
+  color: #f5f5f5; /* Light text for readability */
+}
+
 
 /* Reset list styles */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  color: #545154; /* text */
 }
 
 /* Tech-themed navigation bar */
@@ -47,6 +54,7 @@ ul {
   max-width: 600px; /* Adjust based on your layout */
   margin: 20px auto;
 }
+
 
 .tech-nav ul {
   display: flex;
@@ -111,6 +119,7 @@ ul {
 /*This is for the blocks*/
 .content-block {
   background-color: #ffffff; /* or any color you prefer */
+  color: #545154; /* text */
   border: 1px solid #ddd; /* light grey border */
   border-radius: 4px; /* rounded corners */
   padding: 20px; /* space inside the cards */
@@ -121,10 +130,12 @@ ul {
 .content-block p {
   /* For paragraphs and list items within the block */
   font-size: 0.9rem; /* Adjust as needed */
+  color: #545154; /* text */
 }
 .content-block h4 {
   /* If you want to specifically adjust the size for headers within the block */
   font-size: 1.1rem; /* Adjust as needed */
+  color: #545154; /* text */
 }
 
 h4 {
@@ -137,6 +148,7 @@ h4 {
 .content-block ul,
 .content-block li {
     text-align: justify;
+    color: #545154; /* text */
 }
 
 .subitems {
